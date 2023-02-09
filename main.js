@@ -41,7 +41,6 @@ navbarToggleBtn.addEventListener('click', () => {
 // });
 
 // Contack Meボタンで移動
-
 const homeContact = document.querySelector('.home__contact');
 homeContact.addEventListener('click', () => {
   scrollIntoView('#contact');
@@ -84,7 +83,6 @@ document.addEventListener('scroll', () => {
 });
 
 // work category
-
 const workBtn = document.querySelector('.work__categories');
 const workProjects = document.querySelector('.work__projects');
 const projects = document.querySelectorAll('.project');
