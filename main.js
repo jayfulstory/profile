@@ -25,6 +25,12 @@ navbarMenu.addEventListener('click', event => {
   scrollIntoView(link);
 });
 
+// Contack Meボタンで移動
+const homeContact = document.querySelector('.home__contact');
+homeContact.addEventListener('click', () => {
+  scrollIntoView('#contact');
+});
+
 // navber　toggle
 const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
 navbarToggleBtn.addEventListener('click', () => {
@@ -40,20 +46,11 @@ navbarToggleBtn.addEventListener('click', () => {
 //   }
 // });
 
-// Contack Meボタンで移動
-const homeContact = document.querySelector('.home__contact');
-homeContact.addEventListener('click', () => {
-  scrollIntoView('#contact');
-});
-
 // scrollIntoView
 function scrollIntoView(selecter) {
   const scrollTo = document.querySelector(selecter);
   scrollTo.scrollIntoView({ behavior: 'smooth' });
 }
-
-//rellax
-var rellax = new Rellax('.rellax');
 //星を動かす
 const star = document.querySelector('.star');
 // ホームの透明化　/　左右移動
@@ -88,6 +85,7 @@ const workProjects = document.querySelector('.work__projects');
 const projects = document.querySelectorAll('.project');
 
 workBtn.addEventListener('click', e => {
+  // cssの pointer-events: none;　と同じ機能
   const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
   if (filter == null) {
     return;

@@ -49,71 +49,36 @@
       <!-- bg -->
       <div id="main__img">
         <div class="para-top">
-          <img
-            src="./imgs/bg/bg.png"
-            class="rellax"
-            data-rellax-speed="0"
-            alt="sky"
-            style="z-index: -10"
-          />
-          <img
-            src="./imgs/bg/1.png"
-            class="rellax"
-            id="bg2"
-            data-rellax-speed="0"
-            alt="1"
-            style="z-index: 2"
-          />
+          <img src="./imgs/bg/bg.png" alt="空" style="z-index: -1" />
+          <img src="./imgs/bg/1.png" id="bg2" alt="背景" />
           <img
             src="./imgs/bg/bird1.png"
             class="rellax"
             data-rellax-speed="-6"
-            alt="1"
-            style="z-index: 2"
+            alt="bird"
           />
           <img
             src="./imgs/bg/bird2.png"
             class="rellax"
             data-rellax-speed="3"
-            alt="1"
-            style="z-index: 1"
+            alt="bird"
           />
-          <img
-            src="./imgs/bg/cloud-right.png"
-            alt="cloud"
-            class="rellax"
-            data-rellax-speed="-10"
-            style="z-index: 0"
-          />
+          <img src="./imgs/bg/cloud-right.png" alt="cloud" />
         </div>
         <div class="para-right">
-          <img
-            src="./imgs/bg/3.png"
-            class="rellax"
-            data-rellax-speed="-3"
-            alt="3"
-            style="z-index: 2"
-          />
+          <img src="./imgs/bg/3.png" alt="coconut" />
         </div>
         <div class="para-left">
-          <img
-            src="./imgs/bg/2.png"
-            alt="2"
-            class="rellax"
-            data-rellax-speed="0"
-            style="z-index: 2"
-          />
           <img
             src="./imgs/bg/cloud-left.png"
             alt="cloud"
             class="rellax"
             data-rellax-speed="3"
-            style="z-index: 1"
           />
+          <img src="./imgs/bg/2.png" alt="coconut" />
         </div>
         <img class="star" src="./imgs/bg/star.png" alt="star" />
       </div>
-
       <!-- Home -->
       <section id="home">
         <div class="home__container">
@@ -122,10 +87,6 @@
             alt="Jaehyeon's-profile-photo"
             class="home__avatar"
           />
-          <!-- <h1 class="home__title">
-            Hello,<br />I'm
-            <ruby>Jae<rt>ジェ</rt>hyeon<rt>ヒョン</rt></ruby>
-          </h1> -->
           <h1 class="home__title">こんにちは<br />ジェヒョンと申します</h1>
           <button class="home__contact" data-link="#homeContact">
             Contact Me
@@ -206,7 +167,6 @@
           </div>
         </div>
       </section>
-
       <!-- Skills -->
       <section id="skills" class="section">
         <div class="section__container">
@@ -214,8 +174,6 @@
           <p>学校で学んでいる言語とレベルです</p>
           <p class="comment">※グラフは成績が目安です</p>
           <div class="skillset">
-            <!-- <div class="skillset__left"> -->
-            <!-- <h3 class="skillset__title">Skills</h3> -->
             <div class="skill">
               <div class="skill__description">
                 <span>HTML</span>
@@ -255,12 +213,12 @@
           </div>
           <!-- </div> -->
         </div>
-        <h3>これから勉強したいこと</h3>
+        <h3>授業以外に少しずつ勉強していることと勉強したいことです</h3>
         <div class="about__majors">
           <div class="major">
             <div class="major__icon">
               <!-- <i class="fa-brands fa-square-git"></i> -->
-              <img src="./imgs/git2.png" alt="" />
+              <img src="./imgs/git2.png" alt="git" />
             </div>
             <h2 class="major__tittle">git</h2>
             <!-- <div class="major__description">
@@ -270,7 +228,7 @@
           <div class="major">
             <div class="major__icon">
               <!-- <i class="fa-brands fa-react"></i> -->
-              <img src="./imgs/React.png" alt="" />
+              <img src="./imgs/React.png" alt="React" />
             </div>
             <h2 class="major__tittle">React</h2>
             <!-- <div class="major__description">
@@ -279,7 +237,17 @@
           </div>
           <div class="major">
             <div class="major__icon">
-              <img src="./imgs/ts.png" alt="" />
+              <img src="./imgs/vue.png" alt="vue" />
+              <!-- <i class="fa-brands fa-square-js"></i> -->
+            </div>
+            <h2 class="major__tittle">Vue</h2>
+            <!-- <div class="major__description">
+              Lorem ipsum dolor sit, amet consectetur <br />adipisicing elit.
+            </div> -->
+          </div>
+          <div class="major">
+            <div class="major__icon">
+              <img src="./imgs/ts.png" alt="TypeScript" />
               <!-- <i class="fa-brands fa-square-js"></i> -->
             </div>
             <h2 class="major__tittle">TypeScript</h2>
@@ -289,17 +257,16 @@
           </div>
         </div>
       </section>
-
       <!-- Projects -->
       <section id="work" class="section">
         <div class="section__container">
           <h1>Projects</h1>
           <div class="work__categories">
             <button class="category__btn selected" data-filter="*">
-              全て<span class="category__count">10</span>
+              全て<span class="category__count">11</span>
             </button>
             <button class="category__btn" data-filter="project">
-              課題<span class="category__count">6</span>
+              課題<span class="category__count">7</span>
             </button>
             <button class="category__btn" data-filter="study">
               自習<span class="category__count">4</span>
@@ -322,6 +289,25 @@
                 <span
                   >1日3食を紹介する課題でした<br />
                   インスタのUIをオーマージュして作りました
+                </span>
+              </div>
+            </a>
+            <a
+              href="https://jayfulstory.github.io/bakery"
+              class="project"
+              data-type="project"
+              target="_blank"
+            >
+              <img
+                src="./imgs/projects/bakery.png"
+                alt="bakery"
+                class="project__img"
+              />
+              <div class="project__description">
+                <h3>ベーカリーサイトのリニュアル</h3>
+                <span
+                  >渡されたサンプルサイトを<br />リニュアルする課題でした。
+                  黒をベースにして高級感を出そうとしました
                 </span>
               </div>
             </a>
@@ -465,7 +451,6 @@
           </div>
         </div>
       </section>
-
       <!-- Testimonials -->
       <section id="testimonials" class="section">
         <div class="section__container">
@@ -503,7 +488,6 @@
           </div>
         </div>
       </section>
-
       <!-- Contact -->
       <section id="contact" class="section">
         <div class="contact__email">
@@ -516,12 +500,15 @@
           </a>
         </div>
       </section>
-      <div class="copyComplete">コピーしました！</div>
       <!-- copyComplete -->
+      <div class="copyComplete">コピーしました！</div>
       <!--Up button -->
       <button class="up-button">
         <i class="fa-solid fa-arrow-up"></i>
       </button>
     </div>
+    <script>
+      var rellax = new Rellax('.rellax');
+    </script>
   </body>
 </html>
