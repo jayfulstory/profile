@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jaehyeon's portfolio</title>
+    <meta name="description" content="Portfolio for jaehyeon" />
+    <meta name="author" content="Jaehyeon" />
+    <link rel="shortcut icon" type="image/png" href="imgs/icon.png" />
+    <script
+      src="https://kit.fontawesome.com/800665659c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- rellax -->
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- NavBar -->
+      <nav id="navbar">
+        <div class="navbar__logo">
+          <i class="fa-solid fa-code"></i>
+          <a href="#">Jaehyeon</a>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__menu__item" data-link="#home">Home</li>
+          <li class="navbar__menu__item" data-link="#about">About</li>
+          <li class="navbar__menu__item" data-link="#skills">Skills</li>
+          <li class="navbar__menu__item" data-link="#work">Project</li>
+          <li class="navbar__menu__item" data-link="#testimonials">
+            Testimonials
+          </li>
+          <li class="navbar__menu__item" data-link="#contact">Contact</li>
+        </ul>
+        <!-- Toogle button -->
+        <button class="navbar__toggle-btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+      <!-- bg -->
+      <div id="main__img">
+        <div class="para-top">
+          <img src="./imgs/bg/bg.png" alt="空" style="z-index: -1" />
+          <img src="./imgs/bg/1.png" id="bg2" alt="背景" />
+          <img
+            src="./imgs/bg/bird1.png"
+            class="rellax"
+            data-rellax-speed="-6"
+            alt="bird"
+          />
+          <img
+            src="./imgs/bg/bird2.png"
+            class="rellax"
+            data-rellax-speed="3"
+            alt="bird"
+          />
+          <img src="./imgs/bg/cloud-right.png" alt="cloud" />
+        </div>
+        <div class="para-right">
+          <img src="./imgs/bg/3.png" alt="coconut" />
+        </div>
+        <div class="para-left">
+          <img
+            src="./imgs/bg/cloud-left.png"
+            alt="cloud"
+            class="rellax"
+            data-rellax-speed="3"
+          />
+          <img src="./imgs/bg/2.png" alt="coconut" />
+        </div>
+        <img class="star" src="./imgs/bg/star.png" alt="star" />
+      </div>
+      <!-- Home -->
+      <section id="home">
+        <div class="home__container">
+          <img
+            src="./imgs/profile.png"
+            alt="Jaehyeon's-profile-photo"
+            class="home__avatar"
+          />
+          <h1 class="home__title">こんにちは<br />ジェヒョンと申します</h1>
+          <button class="home__contact" data-link="#homeContact">
+            Contact Me
+          </button>
+        </div>
+      </section>
+      <!-- About -->
+      <section id="about" class="section section__container">
+        <h1>About Me</h1>
+        <p>
+          新しい挑戦を恐れず、常に学び続けたいです。<br />今はフロントエンドエンジニアになるために勉強しています！
+        </p>
+        <div class="about__school">
+          <h3>学歴</h3>
+          <div class="school">
+            <div class="school__logo">
+              <img src="./imgs/school/meric.png" alt="meric-logo" />
+            </div>
+            <div class="school__text">
+              <p class="school__name">大阪 MERIC日本語学校</p>
+              <p class="school__discription">2022.03 卒業</p>
+            </div>
+          </div>
+          <div class="school">
+            <div class="school__logo">
+              <img src="./imgs/school/hal.png" alt="hal-tokyo-logo" />
+            </div>
+            <div class="school__text">
+              <p class="school__name">HAL東京 デッサン入門専科</p>
+              <p class="school__discription">2022.06 受講</p>
+            </div>
+          </div>
+          <div class="school">
+            <div class="school__logo">
+              <img src="./imgs/school/hal.png" alt="hal-tokyo-logo" />
+            </div>
+            <div class="school__text">
+              <p class="school__name">HAL東京 昼間部2年制課程 web学科</p>
+              <p class="school__discription">2022.04 入学 1年次在学中</p>
+            </div>
+          </div>
+          <h3>資格</h3>
+          <div class="school">
+            <div class="school__logo">
+              <img src="./imgs/school/jlpt.png" alt="meric-logo" />
+            </div>
+            <div class="school__text">
+              <p class="school__name">JLPT N1</p>
+              <p class="school__discription">2022.01 取得</p>
+            </div>
+          </div>
+          <div class="school">
+            <div class="school__logo">
+              <img src="./imgs/school/cg-arts.png" alt="hal-tokyo-logo" />
+            </div>
+            <div class="school__text">
+              <p class="school__name">マルチメディア検定 ベーシック</p>
+              <p class="school__discription">2022.08 取得</p>
+            </div>
+          </div>
+          <div class="school">
+            <div class="school__logo">
+              <img src="./imgs/school/cg-arts.png" alt="hal-tokyo-logo" />
+            </div>
+            <div class="school__text">
+              <p class="school__name">webデザイナ検定 ベーシック</p>
+              <p class="school__discription">2022.08 取得</p>
+            </div>
+          </div>
+          <div class="school">
+            <div class="school__logo">
+              <img src="./imgs/school/oft.png" alt="hal-tokyo-logo" />
+            </div>
+            <div class="school__text">
+              <p class="school__name">色彩検定 3級</p>
+              <p class="school__discription">2022.12 取得</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Skills -->
+      <section id="skills" class="section">
+        <div class="section__container">
+          <h1>Skills</h1>
+          <p>学校で学んでいる言語とレベルです</p>
+          <p class="comment">※グラフは成績が目安です</p>
+          <div class="skillset">
+            <div class="skill">
+              <div class="skill__description">
+                <span>HTML</span>
+                <span>95%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 95%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>CSS</span>
+                <span>90%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>Javascript</span>
+                <span>90%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>PHP</span>
+                <span>85%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 85%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3>
+          授業以外にReactとTypeScriptを少しずつ勉強しています。<br />
+          Vueやnode.jsにも興味を持っています。
+        </h3>
+        <div class="about__majors">
+          <div class="major">
+            <div class="major__icon">
+              <img src="./imgs/React.png" alt="React" />
+            </div>
+            <h2 class="major__tittle">React</h2>
+          </div>
+          <div class="major">
+            <div class="major__icon">
+              <img src="./imgs/vue.png" alt="vue" />
+            </div>
+            <h2 class="major__tittle">Vue</h2>
+          </div>
+          <div class="major">
+            <div class="major__icon">
+              <img src="./imgs/ts.png" alt="TypeScript" />
+            </div>
+            <h2 class="major__tittle">TypeScript</h2>
+          </div>
+          <div class="major">
+            <div class="major__icon">
+              <img src="./imgs/nodejs.png" alt="java" />
+            </div>
+            <h2 class="major__tittle">Node.js</h2>
+          </div>
+        </div>
+      </section>
+      <!-- Projects -->
+      <section id="work" class="section">
+        <div class="section__container">
+          <h1>Projects</h1>
+          <div class="work__categories">
+            <button class="category__btn selected" data-filter="*">
+              全て<span class="category__count">12</span>
+            </button>
+            <button class="category__btn" data-filter="project">
+              課題<span class="category__count">7</span>
+            </button>
+            <button class="category__btn" data-filter="study">
+              自習<span class="category__count">5</span>
+            </button>
+          </div>
+          <div class="work__projects">
+            <a
+              href="https://jayfulstory.github.io/fpsgame/"
+              class="project"
+              data-type="project"
+              target="_blank"
+              ><img
+                src="./imgs/projects/project6.png"
+                alt="sample"
+                class="project__img"
+              />
+              <div class="project__description">
+                <h3>FPS game</h3>
+                <span>Jsの課題でFPSゲームのエイム練習サイト</span>
+              </div>
+            </a>
+            <a
+              href="https://jayfulstory.github.io/kadiai03/"
+              class="project"
+              data-type="project"
+              target="_blank"
+            >
+              <img
+                src="./imgs/projects/project1.png"
+                alt="sample"
+                class="project__img"
+              />
+              <div class="project__description">
+                <h3>1日3食</h3>
+                <span
+                  >1日3食を紹介する課題でした<br />
+                  インスタのUIをオーマージュして作りました
+                </span>
+              </div>
+            </a>
+            <a
+              href="https://jayfulstory.github.io/bakery"
+              class="project"
+              data-type="project"
+              target="_blank"
+            >
+              <img
+                src="./imgs/projects/bakery.png"
+                alt="bakery"
+                class="project__img"
+              />
+              <div class="project__description">
+                <h3>ベーカリーサイトのリニュアル</h3>
+                <span
+                  >渡されたサンプルサイトを<br />リニュアルする課題でした。
+                  黒をベースにして高級感を出そうとしました
+                </span>
+              </div>
+            </a>
+            <a
+              href="https://jayfulstory.github.io/weatherAPI/"
+              class="project"
+              data-type="study"
+              target="_blank"
+              ><img
+                src="./imgs/projects/weatherApi.png"
+                alt="天気api"
+                class="project__img"
+              />
+              <div class="project__description">
+                <h3>メモ&天気api</h3>
+                <span
+                  >天気apiを使ってみるたり<br />
+                  localStorageにメモを入れてみたりする<br />
+                  勉強でした。
+                </span>
+              </div>
+            </a>
+            <a
+              href="https://jayfulstory.github.io/kadai07/"
+              class="project"
+              data-type="project"
+              target="_blank"
+              ><img
+                src="./imgs/projects/project2.png"
+                alt="sample"
+                class="project__img"
+              />
+              <div class="project__description">
+                <h3>ミュージシャンサイト</h3>
+                <span
+                  >好きなミュージシャンの公式サイトを作ってみる課題でした</span
+                >
+              </div>
+            </a>
+            <a
+              href="https://jayfulstory.github.io/kadai5/"
+              class="project"
+              data-type="project"
+              target="_blank"
+              ><img
+                src="./imgs/projects/project3.png"
+                alt="sample"
+                class="project__img"
+              />
+              <div class="project__description">
+                <h3>映画情報サイト</h3>
+                <span>映画情報サイトを作る課題でした</span>
+              </div>
+            </a>
+            <a
+              href="https://jayfulstory.github.io/kadaicafe/"
+              class="project"
+              data-type="project"
+              target="_blank"
+              ><img
+                src="./imgs/projects/project4.png"
+                alt="sample"
+                class="project__img"
+              />
+              <div class="project__description">
+                <h3>カフェサイト</h3>
+                <span>提供された写真でカフェサイトを作ってみる課題でした</span>
+              </div>
+            </a>
+            <a
+              href="https://jayfulstory.github.io/jskadai01/"
+              class="project"
+              data-type="project"
+              target="_blank"
+              ><img
+                src="./imgs/projects/project5.png"
+                alt="sample"
+                class="project__img"
+              />
+              <div class="project__description">
+                <h3>風船を割ろう</h3>
+                <span>Jsの課題でクリックして風船を割るゲームを作りました</span>
+              </div>
+            </a>
+            <a
+              href="https://jayfulstory.github.io/responsive/"
+              class="project"
+              data-type="study"
+              target="study"
+              ><img
+                src="./imgs/projects/responsive.png"
+                alt="sample"
+                class="project__img"
+              />
+              <div class="project__description">
+                <h3>responsiveの練習</h3>
+                <span>レスポンシブの練習</span>
+              </div>
+            </a>
+            <a
+              href="https://jayfulstory.github.io/hamburger/"
+              class="project"
+              data-type="study"
+              target="_blank"
+              ><img
+                src="./imgs/projects/hamburger.png"
+                alt="sample"
+                class="project__img"
+              />
+              <div class="project__description">
+                <h3>ハンバーガーメニュー</h3>
+                <span>ハンバーガーメニューを作る練習</span>
+              </div>
+            </a>
+            <a
+              href="https://jayfulstory.github.io/youtube/"
+              class="project"
+              data-type="study"
+              target="_blank"
+              ><img
+                src="./imgs/projects/you.png"
+                alt="sample"
+                class="project__img"
+              />
+              <div class="project__description">
+                <h3>YouTube</h3>
+                <span>ユーチューブのUIを真似して作ったサイト</span>
+              </div>
+            </a>
+            <a
+              href="https://jayfulstory.github.io/shopping/"
+              class="project"
+              data-type="study"
+              target="_blank"
+              ><img
+                src="./imgs/projects/shopping.png"
+                alt="sample"
+                class="project__img"
+              />
+              <div class="project__description">
+                <h3>Shopping</h3>
+                <span>Jsで動的なサイトを作る練習</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- Testimonials -->
+      <section id="testimonials" class="section">
+        <div class="section__container">
+          <h1>Testimonials</h1>
+          <div class="testimonials">
+            <div class="testimonial">
+              <img
+                src="./imgs/testimonial/avatar1.png"
+                alt="sample"
+                class="testimonial__avatar"
+              />
+              <div class="testimonial__speach-bubble">
+                <p>まっすぐで、努力家で、シャイで鋭い感性のヒト。</p>
+                <p class="name">
+                  担任 <ruby>谷<rt>タニ</rt>沢<rt>ザワ</rt></ruby> /
+                  メリック日本語学校
+                </p>
+              </div>
+            </div>
+            <div class="testimonial">
+              <div class="testimonial__speach-bubble">
+                <p>
+                  自己PRを書くのがうまい男。是非彼の自己PRの世界を堪能してみてください。
+                </p>
+                <p class="name">
+                  担任 <ruby>小<rt>コイ</rt>泉<rt>ズミ</rt></ruby> / HAL東京
+                </p>
+              </div>
+              <img
+                src="./imgs/testimonial/avatar2.png"
+                alt="sample"
+                class="testimonial__avatar"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact -->
+      <section id="contact" class="section">
+        <div class="contact__email">
+          <i class="fa-solid fa-envelope icon"></i>jafulkr@gmail.com
+          <span class="copy"><i class="fa-solid fa-copy"></i></span>
+        </div>
+        <div class="contact__links">
+          <a href="https://github.com/jayfulstory" target="_blank">
+            <i class="fa-brands fa-github icon"></i>GitHub
+          </a>
+        </div>
+      </section>
+      <!-- copyComplete -->
+      <div class="copyComplete">コピーしました！</div>
+      <!--Up button -->
+      <button class="up-button">
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+    </div>
+    <script>
+      var rellax = new Rellax('.rellax');
+    </script>
+  </body>
+</html>
