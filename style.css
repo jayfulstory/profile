@@ -310,20 +310,12 @@ p {
   justify-content: center;
 }
 .major__icon img {
-  width: 70px;
+  width: 75px;
   transition: all var(--animation-duration) ease;
-}
-.major__icon i {
-  transition: all var(--animation-duration) ease;
-}
-
-.major__icon:hover i {
-  color: var(--color-orange);
-  transform: rotate(-30deg) scale(1.1);
 }
 .major__icon:hover img {
   color: var(--color-orange);
-  transform: rotate(-30deg) scale(1.1);
+  transform: rotate(-30deg) scale(1.15);
 }
 
 .major__description {
