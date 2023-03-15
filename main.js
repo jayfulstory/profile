@@ -1,5 +1,78 @@
 'use strict';
 
+// projectを動的に追加;
+loadProjects()
+  .then(projects => {
+    displayProjects(projects);
+  })
+  .catch(console.log);
+
+function loadProjects() {
+  return fetch('/data/projects.json')
+    .then(res => res.json())
+    .then(json => json.projectsData);
+}
+
+function displayProjects(projects) {
+  workProjects.innerHTML = projects
+    .map(project => createHTML(project))
+    .join('');
+}
+
+function createHTML(project) {
+  return `
+    <a
+      href="${project.href}"
+      class="${project.className}"
+      data-type="${project.dataType}"
+      target="${project.target}"
+      ><img
+        src="${project.imgSrc}"
+        alt="${project.alt}"
+        class="project__img"
+      />
+      <div class="project__description">
+        <h3>${project.title}</h3>
+        <span
+          >${project.description}
+        </span>
+      </div>
+    </a>
+  `;
+}
+// projectsの切り替え
+const workBtn = document.querySelector('.work__categories');
+const workProjects = document.querySelector('.work__projects');
+
+workBtn.addEventListener('click', e => {
+  const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
+  if (filter == null) {
+    return;
+  }
+  // remove active
+  const active = document.querySelector('.category__btn.selected');
+  active.classList.remove('selected');
+  // 👇はcssの pointer-events: none;　と同じ機能
+  // const target =
+  //   e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
+  // target.classList.add('selected');
+  e.target.classList.add('selected');
+  workProjects.classList.add('anime');
+
+  // 切り替えた後にアニメーション
+  const projects = document.querySelectorAll('.project');
+  setTimeout(() => {
+    projects.forEach(project => {
+      if (filter === '*' || filter === project.dataset.type) {
+        project.classList.remove('showItems');
+      } else {
+        project.classList.add('showItems');
+      }
+    });
+    workProjects.classList.remove('anime');
+  }, 300);
+});
+
 // トップにいる時はnavbarが透明
 const navbar = document.querySelector('#navbar');
 const navbarHeight = navbar.getBoundingClientRect().height;
@@ -37,15 +110,6 @@ navbarToggleBtn.addEventListener('click', () => {
   navbarMenu.classList.toggle('open');
 });
 
-// navbar__menu__item active
-
-// const navItem = document.querySelector('.navbar__menu__item');
-// document.addEventListener('scroll', () => {
-//   if (window.scrollY > homeHeight) {
-//     navItem.classList.add('active');
-//   }
-// });
-
 // scrollIntoView
 function scrollIntoView(selecter) {
   const scrollTo = document.querySelector(selecter);
@@ -66,6 +130,7 @@ document.addEventListener('scroll', () => {
   paraRight.style.transform = `translateX(${window.scrollY / 5}px)`;
   paraLeft.style.opacity = 1.2 - window.scrollY / homeHeight;
   paraLeft.style.transform = `translateX(-${window.scrollY / 5}px)`;
+  // star.style.top = `${window.scrollY}px`;
   star.style.transform = `translateY(${window.scrollY}px)`;
   home.style.opacity = 1.4 - window.scrollY / homeHeight;
 });
@@ -77,40 +142,6 @@ document.addEventListener('scroll', () => {
   } else {
     upBtn.classList.remove('up');
   }
-});
-
-// work category
-const workBtn = document.querySelector('.work__categories');
-const workProjects = document.querySelector('.work__projects');
-const projects = document.querySelectorAll('.project');
-
-workBtn.addEventListener('click', e => {
-  // cssの pointer-events: none;　と同じ機能
-  const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
-  if (filter == null) {
-    return;
-  }
-  // remove active
-  const active = document.querySelector('.category__btn.selected');
-  active.classList.remove('selected');
-  // cssの pointer-events: none;　と同じ機能
-  // const target =
-  //   e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
-  // target.classList.add('selected');
-
-  e.target.classList.add('selected');
-  workProjects.classList.add('anime');
-  // 切り替えた後にアニメーション
-  setTimeout(() => {
-    projects.forEach(project => {
-      if (filter === '*' || filter === project.dataset.type) {
-        project.classList.remove('showItems');
-      } else {
-        project.classList.add('showItems');
-      }
-    });
-    workProjects.classList.remove('anime');
-  }, 300);
 });
 
 upBtn.addEventListener('click', () => {

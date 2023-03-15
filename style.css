@@ -24,6 +24,7 @@
   --font-regular: 18px;
   --font-small: 16px;
   --font-micro: 14px;
+  --font-micro-micro: 12px;
   /* Font weight */
   --weight-bold: 700;
   --weight-semi-bold: 600;
@@ -108,7 +109,7 @@ p {
   /* background-color: transparent; */
   align-items: center;
   color: var(--color-white);
-  padding: 0 16px;
+  padding: 0 50px;
   transition: all var(--animation-duration) ease-in-out;
   z-index: 6;
 }
@@ -284,8 +285,8 @@ p {
   font-size: var(--font-small);
 }
 
-.school__discription {
-  font-size: var(--font-micro);
+.school__description {
+  font-size: var(--font-micro-micro);
 }
 
 /* skill */
@@ -447,6 +448,7 @@ p {
   height: 80%;
   top: 20%;
   left: 0;
+  padding: 0 20px;
   opacity: 0;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;

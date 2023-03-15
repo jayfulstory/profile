@@ -1,0 +1,134 @@
+{
+  "projectsData": [
+    {
+      "href": "https://jayfulstory.github.io/drawingboard/",
+      "className": "project",
+      "dataType": "study",
+      "target": "_blank",
+      "imgSrc": "./imgs/projects/drawing.png",
+      "alt": "canvas",
+      "title": "drawing board",
+      "description": "写真の上に絵を描いたり文字を書いだりしてダウンロードできるサイトです。canvasを使いました。"
+    },
+    {
+      "href": "https://jayfulstory.github.io/fpsgame/",
+      "className": "project",
+      "dataType": "project",
+      "target": "_blank",
+      "imgSrc": "./imgs/projects/project6.png",
+      "alt": "FPSgame",
+      "title": "FPSgame",
+      "description": "Jsの課題で作ったFPSゲームのエイム練習サイトです"
+    },
+    {
+      "href": "https://jayfulstory.github.io/kadiai03/",
+      "className": "project",
+      "dataType": "project",
+      "target": "_blank",
+      "imgSrc": "./imgs/projects/project1.png",
+      "alt": "インスタのオマージュ",
+      "title": "1日3食",
+      "description": "1日3食を紹介する課題でした。インスタのUIをオーマージュして作りました。"
+    },
+    {
+      "href": "https://jayfulstory.github.io/shopping/",
+      "className": "project",
+      "dataType": "study",
+      "target": "_blank",
+      "imgSrc": "./imgs/projects/shopping.png",
+      "alt": "shoppingサイト",
+      "title": "shopping",
+      "description": "jsonデータで商品を追加する勉強でした。"
+    },
+    {
+      "href": "https://jayfulstory.github.io/bakery",
+      "className": "project",
+      "dataType": "project",
+      "target": "_blank",
+      "imgSrc": "./imgs/projects/bakery.png",
+      "alt": "bakery",
+      "title": "ベーカリーサイトのリニュアル",
+      "description": "渡されたサンプルサイトをリニュアルする課題でした。黒をベースにして高級感を出そうとしました。"
+    },
+    {
+      "href": "https://jayfulstory.github.io/weatherAPI/",
+      "className": "project",
+      "dataType": "study",
+      "target": "_blank",
+      "imgSrc": "./imgs/projects/weatherApi.png",
+      "alt": "天気apiサイト",
+      "title": "メモ&天気api",
+      "description": "天気apiを使ってみたりlocalStorageにメモを入れてみたりする勉強でした。"
+    },
+    {
+      "href": "https://jayfulstory.github.io/kadai07/",
+      "className": "project",
+      "dataType": "project",
+      "target": "_blank",
+      "imgSrc": "./imgs/projects/project2.png",
+      "alt": "ミュージシャンサイト",
+      "title": "ミュージシャンサイト",
+      "description": "好きなミュージシャンの公式サイトを作ってみる課題でした。"
+    },
+    {
+      "href": "https://jayfulstory.github.io/kadai5/",
+      "className": "project",
+      "dataType": "project",
+      "target": "_blank",
+      "imgSrc": "./imgs/projects/project3.png",
+      "alt": "映画情報サイト",
+      "title": "映画情報サイト",
+      "description": "映画情報サイトを作る課題でした。"
+    },
+    {
+      "href": "https://jayfulstory.github.io/kadaicafe/",
+      "className": "project",
+      "dataType": "project",
+      "target": "_blank",
+      "imgSrc": "./imgs/projects/project4.png",
+      "alt": "カフェサイト",
+      "title": "カフェサイト",
+      "description": "提供された写真とテキストを使ってカフェサイトを作ってみる課題でした。"
+    },
+    {
+      "href": "https://jayfulstory.github.io/jskadai01/",
+      "className": "project",
+      "dataType": "project",
+      "target": "_blank",
+      "imgSrc": "./imgs/projects/project5.png",
+      "alt": "風船を割るミニゲーム",
+      "title": "風船を割ろう",
+      "description": "Jsの課題でクリックして風船を割るミニゲームを作りました。風船を割るまでかかった時間をカウントするゲームです。"
+    },
+    {
+      "href": "https://jayfulstory.github.io/responsive/",
+      "className": "project",
+      "dataType": "study",
+      "target": "_blank",
+      "imgSrc": "./imgs/projects/responsive.png",
+      "alt": "responsiveの練習",
+      "title": "responsiveの練習",
+      "description": "responsiveの練習"
+    },
+    {
+      "href": "https://jayfulstory.github.io/hamburger/",
+      "className": "project",
+      "dataType": "study",
+      "target": "_blank",
+      "imgSrc": "./imgs/projects/hamburger.png",
+      "alt": "ハンバーガーメニュー",
+      "title": "ハンバーガーメニュー",
+      "description": "ハンバーガーメニューを作る練習でした。"
+    },
+    {
+      "href": "https://jayfulstory.github.io/youtube/",
+      "className": "project",
+      "dataType": "study",
+      "target": "_blank",
+      "imgSrc": "./imgs/projects/you.png",
+      "alt": "ユーチューブのUI",
+      "title": "YouTube",
+      "description": "ユーチューブのUIだけを真似して作ったみたサイトです。"
+    }
+  ]
+}
