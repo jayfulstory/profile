@@ -1,14 +1,21 @@
 'use strict';
 
 // projectを動的に追加;
+const workBtn = document.querySelector('.work__categories');
+const workProjects = document.querySelector('.work__projects');
+const btnAll = document.getElementById('all');
+const btnProject = document.getElementById('project');
+const btnStudy = document.getElementById('study');
+
 loadProjects()
   .then(projects => {
     displayProjects(projects);
+    countProjects(projects);
   })
   .catch(console.log);
 
 function loadProjects() {
-  return fetch('data/projects.json')
+  return fetch('/data/projects.json')
     .then(res => res.json())
     .then(json => json.projectsData);
 }
@@ -40,9 +47,19 @@ function createHTML(project) {
     </a>
   `;
 }
+// projectsを項目にカウント
+function countProjects(projects) {
+  const project = projects.filter(
+    project => 'project' === project.dataType
+  ).length;
+  const study = projects.filter(project => 'study' === project.dataType).length;
+  const all = project + study;
+  btnAll.innerHTML = all;
+  btnProject.innerHTML = project;
+  btnStudy.innerHTML = study;
+}
+
 // projectsの切り替え
-const workBtn = document.querySelector('.work__categories');
-const workProjects = document.querySelector('.work__projects');
 
 workBtn.addEventListener('click', e => {
   const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
@@ -61,6 +78,7 @@ workBtn.addEventListener('click', e => {
 
   // 切り替えた後にアニメーション
   const projects = document.querySelectorAll('.project');
+
   setTimeout(() => {
     projects.forEach(project => {
       if (filter === '*' || filter === project.dataset.type) {
