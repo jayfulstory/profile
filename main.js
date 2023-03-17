@@ -15,7 +15,7 @@ loadProjects()
   .catch(console.log);
 
 function loadProjects() {
-  return fetch('/data/projects.json')
+  return fetch('/data/projects.json', { headers: { 'Permissions-Policy': 'interest-cohort=()' } })
     .then(res => res.json())
     .then(json => json.projectsData);
 }
