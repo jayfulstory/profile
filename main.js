@@ -47,7 +47,7 @@ function createHTML(project) {
     </a>
   `;
 }
-// projectsを項目にカウント
+// projectsを項目によってカウント
 function countProjects(projects) {
   const project = projects.filter(
     project => 'project' === project.dataType
@@ -62,6 +62,7 @@ function countProjects(projects) {
 // projectsの切り替え
 
 workBtn.addEventListener('click', e => {
+  // 👇はcssの pointer-events: none;　と同じ機能
   const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
   if (filter == null) {
     return;
