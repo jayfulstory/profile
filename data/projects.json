@@ -1,6 +1,16 @@
 {
   "projectsData": [
     {
+      "href": "https://jayfulstory.github.io/iogi/",
+      "className": "project",
+      "dataType": "study",
+      "target": "_blank",
+      "imgSrc": "./imgs/projects/iogi.png",
+      "alt": "iogi",
+      "title": "好きな街の紹介",
+      "description": "好きな街を紹介するサイトでした。<br>ぐるぐる回るロゴと落ちるメニューを作りました。"
+    },
+    {
       "href": "https://jayfulstory.github.io/drawingboard/",
       "className": "project",
       "dataType": "study",
