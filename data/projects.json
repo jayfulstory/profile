@@ -3,7 +3,7 @@
     {
       "href": "https://jayfulstory.github.io/iogi/",
       "className": "project",
-      "dataType": "study",
+      "dataType": "project",
       "target": "_blank",
       "imgSrc": "./imgs/projects/iogi.png",
       "alt": "iogi",
